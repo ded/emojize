@@ -1,0 +1,42 @@
+doctype
+html
+  head
+    title Example emoji
+    meta(charset='UTF-8')
+    link(href='sprite/emoji.css', type='text/css', rel='stylesheet')
+    style.
+      body {
+        font-family: helvetica neue;
+        width: 600px;
+        margin: auto;
+      }
+      h1 {
+        font-weight: 300;
+      }
+      .emoji {
+        zoom: 0.5;
+        position: relative;
+        top: 8px;
+      }
+      p {
+        text-align: baseline;
+        font-size: 18px;
+      }
+      img._emoji {
+        width: 32px;
+        height: 32px;
+      }
+  body
+    h1 Sprite based
+    p#content
+
+    h1 Image based
+    p#img
+
+    script(src='ender.js')
+    script.
+      var emoji = require('emojize')
+      emoji.base('img/')
+      var html = emoji.emojize('Haay 😜. Just getting ☕. But maybe 🍻 at 🕘🌜 is that 🆒?')
+      document.getElementById('content').innerHTML = html
+      document.getElementById('img').innerHTML = emoji.emojize('😱 it’s a 🌈🌈', true)

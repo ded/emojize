@@ -1,5 +1,5 @@
 {
-  "name": "node-emoji",
+  "name": "emojize",
   "version": "0.0.0",
   "description": "Unicode to emoji conversion",
   "main": "index.js",
@@ -11,6 +11,15 @@
     "sprite",
     "text"
   ],
+  "ender": {
+    "files": [
+      "lib/*.js"
+    ]
+  },
   "author": "Dustin Diaz",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "~1.4.0",
+    "ender": "~2.0.5"
+  }
 }

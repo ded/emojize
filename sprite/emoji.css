@@ -1,5 +1,6 @@
 .emoji {
   background: url( 'emoji.png' ) no-repeat;
+  display: inline-block;
 }
 
 .emoji._1f4b4 {
