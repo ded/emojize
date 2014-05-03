@@ -33,7 +33,7 @@ document.getElementById('content').innerHTML = convert('Haay 😜')
 ```
 
 #### Sprite vs Image
-`emojize` defaults to sprite based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` along side the file. You could otherwise include all images found in `[img/](img/)` and pass in flag to the second argument to `emojize`
+`emojize` defaults to sprite based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` along side the file. You could otherwise include all images found in [`img/`](img/) and pass in flag to the second argument to `emojize`
 
 ``` js
 var emo = require('emojize')
