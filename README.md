@@ -6,11 +6,11 @@ npm install emojize --save
 ```
 
 ``` js
-var emojize = require('emojize')
-var html = emojize('Haay 😜. Just getting ☕. But maybe 🍻 at 🕘🌜 is that 🆒')
+var convert = require('emojize').emojize
+var html = convert('Haay 😜. Just getting ☕. But maybe 🍻 at 🕘🌜 is that 🆒')
 ```
 
-### Browser
+### Browser usage with Ender
 
 ``` sh
 ender add emojize
@@ -28,11 +28,25 @@ Use of this library requires `<meta charset='utf-8'>` encoding if used in a brow
 ```
 
 ``` js
-var emojize = require('emojize')
-document.getElementById('content').innerHTML = emojize('Haay 😜')
+var convert = require('emojize').emojize
+document.getElementById('content').innerHTML = convert('Haay 😜')
 ```
 
-### Example
+#### Sprite vs Image
+`emojize` defaults to sprite based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` along side the file. You could otherwise include all images found in `[img/](img/)` and pass in flag to the second argument to `emojize`
+
+``` js
+var convert = require('emojize').emojize
+convert.base('images/emojis/')
+convert('Haay 😜', true)
+
+/**
+ * outputs:
+ * 'Haay <img src="images/emojis/_1f61c.png">'
+ */
+```
+
+### Examples
 
 ``` sh
 make build
