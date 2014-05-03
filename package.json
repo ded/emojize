@@ -1,6 +1,6 @@
 {
   "name": "emojize",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Unicode to emoji conversion",
   "main": "index.js",
   "author": "Dustin Diaz",
