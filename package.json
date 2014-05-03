@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Unicode to emoji conversion",
   "main": "index.js",
+  "author": "Dustin Diaz",
+  "homepage": "https://github.com/ded/emojize",
+  "license": "MIT",
   "scripts": {
     "test": "make test"
   },
@@ -16,8 +19,13 @@
       "lib/*.js"
     ]
   },
-  "author": "Dustin Diaz",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ded/emojize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ded/emojize/issues"
+  },
   "devDependencies": {
     "serve": "~1.4.0",
     "ender": "~2.0.5"
