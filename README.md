@@ -1,5 +1,5 @@
 ## Emojize
-Unicode text to emoji conversion utility
+High resolution, unicode (emoji) to html conversion utility
 
 ``` sh
 npm install emojize --save
@@ -55,6 +55,42 @@ open http://localhost:3000/example.jade
 ```
 
 ![Screenshot](http://cl.ly/image/0L3I2y2v0A3D/Screen%20Shot%202014-05-03%20at%202.19.32%20PM.png)
+
+#### Sizing
+Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, consider the following practice. Example assumes LESS.
+
+``` css
+.quarter { zoom: 0.25 }
+.half { zoom: 0.5 }
+.three-quarter { zoom: 0.75 }
+.full { zoom: 1 }
+
+@media screen and (max-width: 768px) {
+  .emoji {
+    .quarter()
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .emoji {
+    .half()
+  }
+}
+@media screen and (max-width: 1200px) {
+  .emoji {
+    .three-quarter()
+  }
+}
+@media screen and (max-width: 1600px) {
+  .emoji {
+    .full()
+  }
+}
+
+```
+
+#### Art Credit
+Much thanks to [Tim Whitlock](http://apps.timwhitlock.info/emoji/tables/iphone) for providing high resolution versions of Apples core emoji set.
 
 ### License MIT
 
