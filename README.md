@@ -1,4 +1,4 @@
-## Node Emoji
+## Emojize
 Unicode text to emoji conversion utility
 
 ``` sh
