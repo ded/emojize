@@ -89,9 +89,7 @@ Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, c
 
 ```
 
-#### Art Credit
-Much thanks to [Tim Whitlock](http://apps.timwhitlock.info/emoji/tables/iphone) for providing high resolution versions of Apples core emoji set.
-
-#### License MIT
+#### Credits
+Much thanks to [Gemoji project](https://github.com/github/gemoji) for high resolution images and [Apple Inc.](http://apple.com) for Artwork. See [License](https://github.com/github/gemoji/blob/master/LICENSE)
 
 Happy Emojizing!
