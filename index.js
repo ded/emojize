@@ -15,7 +15,7 @@ module.exports.emojize = function emojize(s, use_image) {
     var index = s.indexOf(unicode)
     if (index != -1) {
       var new_s = s.slice(0, index)
-      return emojize(new_s + fn(emoji[unicode]) + s.slice(index + 2), use_image)
+      return emojize(new_s + fn(emoji[unicode]) + s.slice(index + unicode.length), use_image)
     }
   }
   return s
