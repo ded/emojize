@@ -16,7 +16,7 @@ var html = convert('Haay 😜. Just getting ☕. But maybe 🍻 at 🕘🌜 is t
 ender add emojize
 ```
 
-### Note
+#### Note
 Use of this library requires `<meta charset='utf-8'>` encoding if used in a browser.
 
 ``` html
@@ -32,7 +32,7 @@ var convert = require('emojize').emojize
 document.getElementById('content').innerHTML = convert('Haay 😜')
 ```
 
-#### Sprite vs Image
+### Sprite vs Image
 `emojize` defaults to sprite based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` along side the file. You could otherwise include all images found in [`img/`](img/) and pass in flag to the second argument to `emojize`
 
 ``` js
@@ -56,7 +56,7 @@ open http://localhost:3000/example.jade
 
 ![Screenshot](http://cl.ly/image/0L3I2y2v0A3D/Screen%20Shot%202014-05-03%20at%202.19.32%20PM.png)
 
-#### Sizing
+### Sizing
 Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, consider the following practice. Example assumes LESS.
 
 ``` css
@@ -92,6 +92,6 @@ Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, c
 #### Art Credit
 Much thanks to [Tim Whitlock](http://apps.timwhitlock.info/emoji/tables/iphone) for providing high resolution versions of Apples core emoji set.
 
-### License MIT
+#### License MIT
 
 Happy Emojizing!
