@@ -5,8 +5,8 @@ function sprite(text) {
   return '<span class="emoji ' + text + '"></span>'
 }
 
-function image(text) {
-  return '<img class="_emoji" src="' + base + text + '.png">'
+function image(text, code) {
+  return '<img alt="' + code + '" class="_emoji" src="' + base + text + '.png">'
 }
 
 module.exports.emojize = function emojize(s, use_image) {
@@ -15,7 +15,7 @@ module.exports.emojize = function emojize(s, use_image) {
     var index = s.indexOf(unicode)
     if (index != -1) {
       var new_s = s.slice(0, index)
-      return emojize(new_s + fn(emoji[unicode]) + s.slice(index + unicode.length), use_image)
+      return emojize(new_s + fn(emoji[unicode], unicode) + s.slice(index + unicode.length), use_image)
     }
   }
   return s
