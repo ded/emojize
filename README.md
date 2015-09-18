@@ -1,5 +1,5 @@
 ## Emojize
-High resolution, unicode (emoji) to html conversion utility
+A high resolution, unicode (emoji) to html conversion utility.
 
 ``` sh
 npm install emojize --save
@@ -33,7 +33,7 @@ document.getElementById('content').innerHTML = convert('Haay 😜')
 ```
 
 ### Sprite vs Image
-`emojize` defaults to sprite based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` along side the file. You could otherwise include all images found in [`img/`](img/) and pass in flag to the second argument to `emojize`
+`emojize` defaults to sprite-based conversion which ultimately requires the developer to include the `sprite/emoji.css` and upload the `emoji.png` alongside the file. You could otherwise include all images found in [`img/`](img/) and pass in flag to the second argument to `emojize`
 
 ``` js
 var emo = require('emojize')
@@ -57,7 +57,7 @@ open http://localhost:3000/example.jade
 ![Screenshot](http://cl.ly/image/0L3I2y2v0A3D/Screen%20Shot%202014-05-03%20at%202.19.32%20PM.png)
 
 ### Sizing
-Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, consider the following practice. Example assumes LESS.
+Each emoji defaults to `64px` × `64px` which may not always be desired. Thus, consider the following practice (example assumes LESS):
 
 ``` css
 .quarter { zoom: 0.25 }
